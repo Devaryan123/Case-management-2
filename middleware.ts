@@ -1,8 +1,8 @@
 import { NextResponse } from "next/server";
 import { stackServerApp } from "./stack";
 
-const publicRoutes = ["/signin", "/handler/signup"];
-const protectedRoutes = ["/", "/dashboard"];
+const publicRoutes = ["/signin", "/handler/signup","/"];
+const protectedRoutes = ["/dashboard"];
 
 export async function middleware(req: any) {
   const user = await stackServerApp.getUser();
