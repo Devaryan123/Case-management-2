@@ -14,7 +14,6 @@ import { ConvexClientProvider } from "@/components/ConvexClientProvider";
 //   subsets: ["latin"],
 // });
 
-
 export const metadata: Metadata = {
   title: "Case Management",
   description: "Manage your legal cases efficiently",
