@@ -3,8 +3,6 @@ import type { Metadata } from "next";
 import { stackServerApp } from "../stack";
 import "./globals.css";
 import { ConvexClientProvider } from "@/components/ConvexClientProvider";
-import { useEffect } from "react";
-import { useRouter } from "next/navigation";
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
@@ -15,11 +13,7 @@ import { useRouter } from "next/navigation";
 //   variable: "--font-geist-mono",
 //   subsets: ["latin"],
 // });
-const router = useRouter();
 
-  useEffect(() => {
-    router.push("/dashboard");
-  }, []);
 
 export const metadata: Metadata = {
   title: "Case Management",

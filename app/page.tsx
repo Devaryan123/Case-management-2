@@ -1,10 +1,14 @@
-import React from 'react'
+"use client";
+import React from "react";
+import { useEffect } from "react";
+import { useRouter } from "next/router";
+const router = useRouter();
+
+useEffect(() => {
+  router.push("/dashboard");
+}, [router]);
 const page = () => {
-  return (
-    <div>
+  return <div></div>;
+};
 
-    </div>
-  );
-}
-
-export default page
+export default page;
