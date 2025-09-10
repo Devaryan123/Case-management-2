@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import { stackServerApp } from "./stack";
 
-const publicRoutes = ["/signin", "/handler/signup","/"];
+const publicRoutes = ["/signin", "/handler/signup","/dashboard"];
 const protectedRoutes = ["/dashboard"];
 
 export async function middleware(req: any) {
